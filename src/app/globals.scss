@@ -1,0 +1,35 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Roboto:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// a {
+//   color: #0070f3;
+//   text-decoration: none;
+// }
+
+// a:hover {
+//   text-decoration: underline;
+// }
+
+// img {
+//   max-width: 100%;
+//   display: block;
+// }
