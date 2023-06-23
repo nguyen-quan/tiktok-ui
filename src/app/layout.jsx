@@ -1,6 +1,11 @@
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import "./globals.scss";
+import "./globals.css";
+
+import classNames from "classnames/bind";
+import styles from "../css/defaultLayout.module.scss";
+
+const cx = classNames.bind(styles);
 
 export const metadata = {
   title: "Tik tok",
@@ -11,12 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div>
+        <div className={cx("wrapper")}>
           <Header />
-          <div className="container">
+          {/* <div className={cx("container")}>
             <Sidebar />
-            <div className="content">{children}</div>
-          </div>
+            <div className={cx("content")}>{children}</div>
+          </div> */}
         </div>
       </body>
     </html>
